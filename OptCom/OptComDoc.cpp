@@ -30,7 +30,7 @@ END_MESSAGE_MAP()
 COptComDoc::COptComDoc()
 {
 	// TODO: 在此添加一次性构造代码
-
+	
 }
 
 COptComDoc::~COptComDoc()

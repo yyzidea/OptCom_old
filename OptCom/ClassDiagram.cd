@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="COptComDoc">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAACAAAgAAgASggAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>OptComDoc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDocument">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CDocument::CDocumentAdapter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Enum Name="CDocument::DocumentEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="CDocument::XInitializeWithStream" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CDocument::XPreviewHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CDocument::XPreviewHandlerVisuals" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CDocument::XObjectWithSite" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="CDocument::XOleWindow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>F0iRGAEE3hIQGAghCcMKuCJisGjggtJWHCDsAwAQ4qA=</HashCode>
+      <FileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxwin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

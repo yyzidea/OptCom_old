@@ -11,6 +11,7 @@
 
 #include "OptComDoc.h"
 #include "OptComView.h"
+#include "SerialCom.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -46,7 +47,7 @@ BOOL COptComView::PreCreateWindow(CREATESTRUCT& cs)
 
 // COptComView 绘制
 
-void COptComView::OnDraw(CDC* /*pDC*/)
+void COptComView::OnDraw(CDC* pDC)
 {
 	COptComDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -54,6 +55,19 @@ void COptComView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: 在此处为本机数据添加绘制代码
+	pDC->TextOutW(20, 20, pDoc->GetPathName());
+
+	HANDLE hMasterCOM = CreateFile(L"\\\\.\\COM3",
+		GENERIC_READ | GENERIC_WRITE,
+		0,
+		0,
+		OPEN_EXISTING,
+		FILE_ATTRIBUTE_NORMAL,
+		0);
+
+	PurgeComm(hMasterCOM, PURGE_TXABORT | PURGE_RXABORT | PURGE_TXCLEAR | PURGE_RXCLEAR);
+	
+
 }
 
 
