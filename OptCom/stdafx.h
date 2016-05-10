@@ -22,7 +22,32 @@
 
 #include <afxdisp.h>        // MFC 自动化类
 
+//Standard library
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <ntddser.h>
+#include <vector>
+#include <functional>
+#include <assert.h>
+#include <Windows.h>
+#include <stdio.h>
+#include <WindowsX.h>
 
+#pragma comment(lib, "setupapi.lib")
+#include <SetupAPI.h>
+#include <initguid.h>
+
+//Com library
+#include "list.h"
+#include "memory.h"
+#include "utils.h"
+#include "DataProcessor.h"
+//#include "Thunk.h"
+#include "Config.h"
+#include "Comm.h"
+#include "SerialCom.h"
+//#include "TextEditor.h"
 
 #ifndef _AFX_NO_OLE_SUPPORT
 #include <afxdtctl.h>           // MFC 对 Internet Explorer 4 公共控件的支持
@@ -35,11 +60,7 @@
 
 
 
-
-
-
-
-
+#define SPRINTF_BUFFER_LENGTH 20
 
 #ifdef _UNICODE
 #if defined _M_IX86
